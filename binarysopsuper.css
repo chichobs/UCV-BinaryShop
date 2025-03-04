@@ -1,0 +1,17 @@
+:root {
+    --clr-: #282A36;
+    --clr-: #44475A;
+    --clr-: #6272A4;
+    --clr-: #BD93F9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'rubik', sans-serif;
+}
+
+h1, h2, h3, h4, input, button {
+    margin: 0;
+}
