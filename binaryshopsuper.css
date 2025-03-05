@@ -33,23 +33,29 @@ body {
 
 .header {
     background-color: var(--clr-P);   
+    display: flex ;
+    align-items: center;
+    min-height: 7.5rem;
 }    
+
+.logo {
+    color: var(--clr-S);
+    margin-right: 15px;
+}   
 
 .logo-2 {
     font-family: cursive;
     font-size: 1.5rem;
-    color: var(--clr-S);
-    padding:  1rem 0rem 0rem 1rem;
+    padding:  1rem 0rem 0rem 2rem;
 }
 
-.logo {
+.logo-1 {
     font-family: cursive;
     font-size: 3rem;
-    color: var(--clr-S);
-    padding:  0rem 0rem 1rem 1rem;
+    padding:  0rem 0rem 1rem 2rem;
 }
 
-.logo:hover, .logo-2:hover {
+.logo:hover {
     visibility: hidden;
 }
 
@@ -65,7 +71,6 @@ body {
 }
 
 .buscar {
-    position: absolute;
     top: 3rem;
     right: 1rem;
     padding: 0.8rem;
@@ -77,6 +82,7 @@ body {
     background-color: var(--clr-Q);
     outline: none;
     border: none;
+    margin-right: 15px;
 }
 
 .buscar:hover {
@@ -89,6 +95,13 @@ body {
     font-weight: bold;
 }
 
+@media (min-width: 600px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
 .menu-categorias {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -98,11 +111,11 @@ body {
     font-size: 2.3rem;
     font-weight: bold;
     color: var(--clr-S);
-    padding:  1rem 0rem 4rem 0rem;
+    padding:  1rem 0rem 2.6rem 0rem;
 }
 
 .categorias {
-    padding: 2rem;
+    padding: 2rem 0rem 0rem 2rem;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -153,13 +166,14 @@ footer {
 
 .qlq {
     background-color: var(--clr-Q);
-    border-radius: 7px;
-    padding: 3rem;
-}
+    border-radius: 10px 0px 0px 0px;
+    padding: 3rem 0.6rem 3rem 2.2rem;
+} 
 
 .titulo-principal {
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: bold;
+    padding: 0.3rem 0rem 2rem 0rem;
 }
 
 .contenedor-productos {
@@ -170,12 +184,18 @@ footer {
 .producto-imagen { 
     flex-grow: 1; 
     flex-basis: 200; 
-    width: 200px; 
+    width: 210px; 
     height: 200px; 
-    margin: 1rem; 
-} 
+    margin: 0rem 2rem 0rem 0rem; 
+    border-radius: 10px;
+    /* filter: grayscale(100%); para mas epica */
+}
 
-/*
+/* .producto-imagen:hover {
+    transition: 0.5s;
+    filter: grayscale(0%);
+}
+
 version para adaptar a la pantalla
 .qlq {
     background-color: var(--clr-Q);
@@ -205,3 +225,21 @@ version para adaptar a la pantalla
     width: 200px; 
     height: 200px; 
 } */
+
+.producto {
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--clr-P);
+    align-items: center;
+    margin: 0rem 1.5rem 1.5rem 0rem;
+    padding: 15px;
+    width: 240px;
+}
+
+.producto:hover {
+    transition: 0.4s;
+    background-color: var(--clr-S);
+    color: var(--clr-P);
+    filter: drop-shadow( 0px 5px 15px rgba(0, 0, 0, 0.5));
+}
+
