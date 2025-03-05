@@ -27,12 +27,12 @@ a {
 }
 
 body {
-    background-color: var(--clr-Q);
+    background-color: #282a36fb;
     color: var(--clr-S);
 }
 
 .header {
-    background-color: var(--clr-P);    
+    background-color: var(--clr-P);   
 }    
 
 .logo-2 {
@@ -118,7 +118,7 @@ body {
     color: rgba(255, 255, 255, 0.829);
     font-weight: bold;
     border-radius: 20px;
-    background-color: var(--clr-P);
+    background-color: var(--clr-Q);
     cursor: pointer;
     font-size: 16px;
     text-align: left; 
@@ -144,9 +144,64 @@ footer {
     color: rgba(255, 255, 255, 0.829);
     font-weight: bold;
     border-radius: 20px;
-    background-color: var(--clr-P);
+    background-color: var(--clr-Q);
     cursor: pointer;
     font-size: 16px;
     text-align: left; 
     padding-left: 15px;
 }
+
+.qlq {
+    background-color: var(--clr-Q);
+    border-radius: 7px;
+    padding: 3rem;
+}
+
+.titulo-principal {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.producto-imagen { 
+    flex-grow: 1; 
+    flex-basis: 200; 
+    width: 200px; 
+    height: 200px; 
+    margin: 1rem; 
+} 
+
+/*
+version para adaptar a la pantalla
+.qlq {
+    background-color: var(--clr-Q);
+    border-radius: 7px;
+    padding: 3rem;
+}
+
+.titulo-principal {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.contenedor-productos {
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.producto {
+    flex-grow: 1; 
+    flex-basis: 200; 
+    width: 200px; 
+    height: 200px; 
+    margin: 1rem;
+}
+
+.producto-imagen {
+    width: 200px; 
+    height: 200px; 
+} */
