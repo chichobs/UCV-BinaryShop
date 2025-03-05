@@ -3,6 +3,7 @@
     --clr-Q: #44475A;
     --clr-R: #6272A4;
     --clr-S: #BD93F9;
+    --clr-T: #F8F8F2;
 }
 
 * {
@@ -97,7 +98,7 @@ body {
     font-size: 2.3rem;
     font-weight: bold;
     color: var(--clr-S);
-    padding:  0rem 0rem 2.5rem 0rem;
+    padding:  1rem 0rem 4rem 0rem;
 }
 
 .categorias {
@@ -109,20 +110,43 @@ body {
     scrollbar-width: none;
 }
 
-button {
+.boton-menu {
     margin: 0.3rem;
     border: 0px; 
     height: 40px;
-    width: 150px;
+    width: 170px;
     color: rgba(255, 255, 255, 0.829);
     font-weight: bold;
     border-radius: 20px;
     background-color: var(--clr-P);
     cursor: pointer;
     font-size: 16px;
+    text-align: left; 
+    padding-left: 15px;
 }
 
-button:hover {
+.boton-menu:hover {
     transition: 0.5s;
     background-color: var(--clr-S);
+}
+
+footer {
+    color: var(--clr-R);
+    font-weight: bold;
+    padding: 4rem 0rem 0rem 0rem;
+}
+
+.boton-carrito {
+    margin: 0.3rem;
+    border: 0px; 
+    height: 40px;
+    width: 170px;
+    color: rgba(255, 255, 255, 0.829);
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: var(--clr-P);
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left; 
+    padding-left: 15px;
 }
