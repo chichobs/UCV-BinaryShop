@@ -5,93 +5,100 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-
     <div class="container">
-    <article>
-            <header>
-                <h1 class="logo">BinaryShop</h1>
-            </header>
-            <div>
-                <ul>
-                    <li>
-                        <a class="boton-volver active" href="binaryshopsuper.html">
-                            <i class=" bi bi-shop"></i> Volver a la tienda
-                        </a>
-                    </li>
-                    <li>
-                        <a class="boton-carrito" href="carrito.html">
-                            <i class="bi bi-cart-fill"></i> Carrito
-                        </a>
-                    </li>
-                </ul>
+        <header class="header">
+            <div class="logo">
+                <h2 class="logo-2">Su tienda de confianza</h2>
+                <h1 class="logo-1">BinaryShop</h1>
             </div>
-            <footer>
-                <p>© 2025 BinaryShop</p>
-            </footer>
-        <article>
-    <article>
-        <h2 class="titulo-principal">Carrito</h2>
-        <div class="contenedor-carrito">
-           <p class="carrito-vacio">Tu carrito esta vacio <i class="bi bi-emoji-frown"></i></p>
-           <div class="carrito-productos">
-                <div class="producto">
-                     <img src="descarga.jpeg" alt="">
-                     <div>
-                        <div class="carrito-producto-titulo">
-                            <p>Producto 1</p>
-                            <h3>rubius</h3>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <p>cantidad</p>
-                            <p>1</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <p>precio</p>
-                            <p>$100</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <p>total</p>
-                            <p>$100</p>
-                        </div>    
-                          <button class="carrito-producto-eliminar"><i class="bi bi-trash3-fill"></i></button>
-                     </div>
+            <h2 class="mensaje" style="display: none;">Gracias por preferirnos</h2>
+        </header>
+        <div class="menu-categorias">
+            <section class="categorias">
+                <div>
+                    <h2 class="titulo-categorias">Categorias</h2>
+                    <ul class="menu">
+                        <li>
+                            <a class="boton-tienda" href="binaryshopsuper.html">
+                                <i class="bi bi-shop"></i> Volver a la tienda
+                            </a>
+                        </li>
+                        <li>
+                            <a class="boton-carrito-1 active" href="carrito.html">
+                                <i class="bi bi-cart-fill"></i> Carrito
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="producto">
-                    <img src="bdf39c2ec2a73a5aed2945711939055d.jpeg" alt="">
-                    <div>
-                       <div class="carrito-producto-titulo">
-                           <p>Producto 1</p>
-                           <h3>rana</h3>
-                       </div>
-                       <div class="carrito-producto-cantidad">
-                           <p>cantidad</p>
-                           <p>2</p>
-                       </div>
-                       <div class="carrito-producto-precio">
-                           <p>precio</p>
-                           <p>$150</p>
-                       </div>
-                       <div class="carrito-producto-subtotal">
-                           <p>total</p>
-                           <p>$300</p>
-                       </div>    
-                         <button class="carrito-producto-eliminar"><i class="bi bi-trash3-fill"></i></button>
+                <footer class="footer">
+                    <p>© 2025 BinaryShop</p>
+                </footer>
+            </section> 
+            <section class="carrito-qlq">
+                <h2 class="titulo-principal">Carrito</h2>
+                <div class="contenedor-carrito">
+                    <p class="carrito-vacio">Tu carrito esta vacio.<i class="bi bi-emoji-frown"></i></p>
+                    
+                    <div class="carrito-productos disabled">
+
+                        <div class="carrito-producto">
+                            <img class="carrito-producto-imagen" src="fernanfloo.jpeg" alt="producto">
+                            <div class="carrito-producto-titulo">
+                                <p class="title">Nombre</p>
+                                <h3>Producto 1</h3>
+                            </div>
+                            <div class="carrito-producto-cantidad">
+                                <p class="title">Cantidad</p>
+                                <h3>1</h3>
+                            </div>
+                            <div class="carrito-producto-precio">
+                                <p class="title">Precio</p>
+                                <h3>$100</h3>
+                            </div>
+                            <div class="carrito-producto-subtotal">
+                                <p class="title">Subtotal</p>
+                                <h3>$100</h3>
+                            </div>
+                                <button class="boton-eliminar"><i class="bi bi-trash3-fill"></i></button>
+                        </div>
+                        <div class="carrito-producto">
+                            <img class="carrito-producto-imagen" src="auronplay.jpeg" alt="producto">
+                            <div class="carrito-producto-titulo">
+                                <p class="title">Nombre</p>
+                                <h3>Producto 2</h3>
+                            </div>
+                            <div class="carrito-producto-cantidad">
+                                <p class="title">Cantidad</p>
+                                <h3>2</h3>
+                            </div>
+                            <div class="carrito-producto-precio">
+                                <p class="title">Precio</p>
+                                <h3>$100</>
+                            </div>
+                            <div class="carrito-producto-subtotal">
+                                <p class="title">Subtotal</p>
+                                <h3>$200</h3>
+                            </div>
+                                <button class="boton-eliminar"><i class="bi bi-trash3-fill"></i></button>
+                        </div>
                     </div>
-               </div>
-           </div>
-           <div class="carrito-acciones">
-            <div class="carrito-acciones-left">
-                    <button class="carrito-acciones-vaciar">Vaciar carrito</button>
-            </div>
-            <div class="carrito-acciones-right">
-                <div class="carrito-acciones-total">
-                    <p>Total</p>
-                    <p id="total">$400</p>
                 </div>
-                <button class="carrito-acciones-Comprar">Comprar</button>
-           </div>
+                <div class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izquierda">
+                        <button class="carrito-acciones-vaciar">Vaciar carrito</button>
+                    </div>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total">
+                            <p class="title">Total:</p>
+                            <p>$300</p>
+                        </div>
+                        <button class="carrito-acciones-comprar">Comprar</button>
+                    </div>
+                </div>
+                <p class="carrito-comprado disabled">Muchas gracias por su compra.<i class="bi bi-emoji-sunglasses-fill"></i></p>
+
+            </section> 
         </div>
-    <article>
     </div>
     <script src="binaryshopsuper.js"></script>
 </body>
